@@ -42,3 +42,22 @@ CREATE TABLE coment(
     post_id INT,
     FOREIGN KEY (post_id) REFERENCES post(id)
 );
+
+INSERT INTO coment (id, create_at, content, post_id)
+VALUES  (1, '2021-01-05', 'comment1', 1),
+        (2, '2021-02-05', 'comment2', 2),
+        (3, '2021-03-05', 'comment3', 6),
+        (4, '2021-04-05', 'comment4', 6),
+        (5, '2021-05-05', 'comment5', 6),
+        (6, '2021-06-05', 'comment6', 6);
+
+INSERT TO post (id, username, create_at, content, description, title)
+VALUES (7, 'Margarita', '2021-02-06', 'post7', 'twitterpost', 'title4');
+
+INSERT INTO coment (id, create_at, content, post_id)
+VALUES  (7, '2021-02-07', 'comment7', 7),
+        (8, '2021-02-07', 'comment8', 7),
+        (9, '2021-02-07', 'comment9', 7),
+        (10, '2021-02-07', 'comment10', 7),
+        (11, '2021-02-07', 'comment11', 7),
+        (12, '2021-02-07', 'comment12', 7);

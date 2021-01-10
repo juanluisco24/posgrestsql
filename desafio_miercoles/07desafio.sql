@@ -1,0 +1,1 @@
+SELECT count(DISTINCT name) AS "Numero de actores" FROM casting;
