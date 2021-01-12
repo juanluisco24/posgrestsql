@@ -1,1 +1,34 @@
-<mxfile host="app.diagrams.net" modified="2021-01-11T22:02:55.358Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36" version="13.10.0" etag="kaQUsLHzU3HCjdZqseff" type="github"><diagram id="UmkKh50WbKyTf2Nod6wb">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-01-12T01:15:27.655Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36" etag="R5Z_4OQLg1D_fLP4OHvv" version="13.10.0" type="github">
+  <diagram id="UmkKh50WbKyTf2Nod6wb" name="Page-1">
+    <mxGraphModel dx="796" dy="462" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="EEGUyYz0tXkMgQ-aSjlP-48" value="Departamento" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
+          <mxGeometry x="40" y="80" width="160" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="EEGUyYz0tXkMgQ-aSjlP-49" value="id SERIAL PK&#xa;nombre VARCHAR" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="EEGUyYz0tXkMgQ-aSjlP-48">
+          <mxGeometry y="30" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="EEGUyYz0tXkMgQ-aSjlP-56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="EEGUyYz0tXkMgQ-aSjlP-51" target="EEGUyYz0tXkMgQ-aSjlP-53">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="EEGUyYz0tXkMgQ-aSjlP-51" value="Trabajadores" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;perimeterSpacing=0;" vertex="1" parent="1">
+          <mxGeometry x="240" y="80" width="180" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="EEGUyYz0tXkMgQ-aSjlP-52" value="nombre VARCHAR NOT NULL&#xa;rut VARCHAR NOT NULL PK&#xa;direccion VARCHAR&#xa;departamento_id INT FK" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;perimeterSpacing=1;" vertex="1" parent="EEGUyYz0tXkMgQ-aSjlP-51">
+          <mxGeometry y="30" width="180" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="EEGUyYz0tXkMgQ-aSjlP-53" value="Liquidaciones" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
+          <mxGeometry x="470" y="80" width="190" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="EEGUyYz0tXkMgQ-aSjlP-54" value="id SERIAL PK&#xa;fecha DATE&#xa;drive VARCHAR&#xa;trabajadores_rut VARCHAR FK" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="EEGUyYz0tXkMgQ-aSjlP-53">
+          <mxGeometry y="30" width="190" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="EEGUyYz0tXkMgQ-aSjlP-55" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.337;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="EEGUyYz0tXkMgQ-aSjlP-49" target="EEGUyYz0tXkMgQ-aSjlP-52">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
