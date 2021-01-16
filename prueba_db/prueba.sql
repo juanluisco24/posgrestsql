@@ -1,3 +1,9 @@
+DROP DATABASE IF EXISTS prueba;
+
+CREATE DATABASE prueba;
+
+\c prueba;
+
 CREATE TABLE clientes(
     id SERIAL PRIMARY KEY,
     nombre_cliente VARCHAR(25),
