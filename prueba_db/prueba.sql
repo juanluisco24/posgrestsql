@@ -72,3 +72,23 @@ SELECT * FROM categoria;
 SELECT * FROM productos;
 
 SELECT * FROM facturas;
+
+SELECT nombre_cliente, total, numero_factura AS facturas
+FROM clientes
+INNER JOIN facturas ON clientes.id=facturas.cliente_id
+WHERE total IN (SELECT MAX(total) FROM facturas);
+
+SELECT nombre_cliente, total
+FROM clientes
+INNER JOIN facturas ON clientes.id=facturas.cliente_id
+WHERE total IN
+(SELECT total FROM facturas WHERE total>1000)
+ORDER BY subtotal DESC;
+
+SELECT count(nombre_cliente) AS nombre_cliente
+FROM clientes
+INNER JOIN facturas ON clientes.id=facturas.cliente_id
+INNER JOIN facturas ON facturas.numero_factura=cantidad_producto.facturas
+INNER JOIN productos ON productos.id=cantidad_producto.facturas
+WHERE productos.id IN
+(SELECT productos.id FROM productos WHERE productos.id=6);
